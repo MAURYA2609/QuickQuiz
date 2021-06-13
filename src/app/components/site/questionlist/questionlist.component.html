@@ -1,0 +1,31 @@
+
+	<header>
+		<div class="heading">
+			Question List
+		</div>
+		<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #2D332A;">
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" >
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<div class="navbar-nav" style="float:right;">
+					<a href="/adminhome" class="nav-link">Home</a>
+					<a href="/allscores" class=" nav-link">Scores</a>
+					<a href="/questionlist" class=" nav-link active">Questions</a>
+					<a (click)="logout()" class=" nav-link" >Logout</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+<div class="questionlist"  *ngFor="let que of ALLquestions">
+	<div class="newquestion">
+		<p class="addedQ">QUESTION : {{que.question}} </p>
+		<p class="opt"> A)  {{que.optionA}}</p>
+		<p class="opt"> B)  {{que.optionB}}</p>
+		<p class="opt"> C)  {{que.optionC}}</p>
+		<p class="opt"> D)  {{que.optionD}}</p>
+		<p class="corrA"> Correct : {{que.correct}}</p>
+		<p class="catQ">Category : {{que.category}}</p>
+	</div>
+</div>
+	<br>

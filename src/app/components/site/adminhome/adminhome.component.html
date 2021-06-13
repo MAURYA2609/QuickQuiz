@@ -1,0 +1,62 @@
+
+	<header>
+		<div class="heading">
+		QuickQuiz
+		</div>
+		<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #2D332A;">
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" >
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<div class="navbar-nav">
+					<a href="/adminhome" class="nav-link active">Home</a>
+					<a href="/allscores" class=" nav-link">Scores</a>
+					<a href="/questionlist" class=" nav-link">Questions</a>
+					<a (click)="logout()" class=" nav-link" >Logout</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+	<form [formGroup]="questionForm" autocomplete="off">
+		<div class="questionbox">
+			<div class="question form-group">
+				<textarea formControlName="question" placeholder="Enter a question here" required rows="5" class="form-control"></textarea> <br> 
+			</div><br>
+			<div class="answer form-group">
+				<input type="text" formControlName="optionA" placeholder="Option A" class="form-control" required><br>
+			</div>
+			<div class="answer form-group">
+				<input type="text" formControlName="optionB" placeholder="Option B" class="form-control" required><br>
+			</div>
+			<div class="answer form-group">
+				<input type="text" formControlName="optionC" placeholder="Option C" class="form-control" required><br>
+			</div>
+			<div class="answer form-group">
+				<input type="text" formControlName="optionD" placeholder="Option D" class="form-control" required><br>
+			</div>
+			<div class="setDropdown">
+				<select  name="correct" class="dropdown custom-select"  [(ngModel)]="correct" [ngModelOptions]="{standalone: true}" data-dropdown-auto="false">
+					<option disabled>&nbsp;&nbsp;&nbsp;Correct Answer</option>
+					<option value="A">&nbsp;&nbsp;&nbsp;A</option>
+					<option value="B">&nbsp;&nbsp;&nbsp;B</option>
+					<option value="C">&nbsp;&nbsp;&nbsp;C</option>
+					<option value="D">&nbsp;&nbsp;&nbsp;D</option>
+				</select>
+				<select name="category" class="dropdown custom-select" [(ngModel)]="category" [ngModelOptions]="{standalone: true}">
+					<option disabled>&nbsp;&nbsp;&nbsp;Choose Category</option>
+					<option value="mythology">&nbsp;&nbsp;&nbsp;Mythology</option>
+					<option value="sports">&nbsp;&nbsp;&nbsp;Sports</option>
+					<option value="movies">&nbsp;&nbsp;&nbsp;Movies</option>
+					<option value="history">&nbsp;&nbsp;&nbsp;History</option>
+					<option value="geography">&nbsp;&nbsp;&nbsp;Geography</option>
+					<option value="generalknowledge">&nbsp;&nbsp;&nbsp;General knowledge</option>
+					<option value="space">&nbsp;&nbsp;&nbsp;Space</option>
+					<option value="technology">&nbsp;&nbsp;&nbsp;Technology</option>
+					<option value="literature">&nbsp;&nbsp;&nbsp;Literature</option>
+				</select>
+			</div>
+	
+			</div>
+			<input type="button" value="+" (click)="addQuestion()" class="addbtn">
+	</form>

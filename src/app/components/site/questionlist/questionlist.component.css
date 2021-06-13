@@ -1,0 +1,97 @@
+body{
+    background: linear-gradient(to left, #9277f3, #7b9148f3 );
+    background-size: cover;
+    margin:0px;
+    font-family: cursive;
+  }
+  .navbar{
+    padding: 0px;
+  }
+  .navbar-nav a {
+    font-size: 20px;
+    text-decoration: none;
+    border-radius:10px;
+    cursor:pointer;
+    border:none;
+    float: right;
+    margin:5px 5px;
+  }
+  .navbar-nav{
+    float:right !important;
+  }
+  a:hover{
+    background-color: black;
+  }
+  h2 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  header{
+    background: linear-gradient(to right, #9277f3, #7b9148f3);
+    background-size: cover;
+  }
+  .heading{
+    height:150px;
+    color: #241499;
+    width: 95%;
+    padding: 30px;
+    text-shadow: 3px 3px 3px #989898;
+    font-size: 50px;
+    word-break: break-all;
+    text-align: center;
+    font-size: 4em;
+  }
+  .u>h2{
+    text-align: center;
+  }
+  .questionlist{
+    padding:0px;
+    margin:20px;
+  }
+  .newquestion {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px groove rgb(128, 0, 90);
+    border-radius:10px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #19235db3;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding-top:5px;
+    padding-bottom: -10px;;
+  }
+  .questionlist p{
+    margin-left: 15px;
+  }
+  form{
+    margin-bottom: 50px;
+  }
+  .addedQ,.corrA,.catQ,.opt{
+    color:white;
+    background:rgb(40, 126, 58);
+    margin-left:20px;
+    display: block;
+    border-radius:15px;
+    padding:10px;
+  }
+  .addedQ{
+    width:90%;
+  }
+  .corrA{
+    width:22%;
+  }
+  .opt{
+    background:rgb(78, 58, 105);
+    width:30%;
+  }
+  .catQ{
+    width:40%;
+  }
+  @media screen and (max-width : 700px){
+    .heading{
+      font-size: 25px;
+      font-family: sans-serif;
+    }
+  }

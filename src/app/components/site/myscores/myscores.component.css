@@ -1,0 +1,68 @@
+body{
+    background: linear-gradient(to right, #6acc66, #848491);
+    background-size: cover;
+    margin:0px;
+    font-family: cursive;
+  }
+  .navbar-nav a {
+    font-size: 20px;
+    text-decoration: none;
+    border-radius:10px;
+    cursor:pointer;
+    border:none;
+    float: right;
+    margin:5px 5px;
+  }
+  .navbar-nav{
+    float: right !important;
+  }
+  a:hover{
+    background-color: black;
+  }
+  .heading {
+    font-size: 50px;
+    word-break: break-all;
+    text-align: center;
+  }
+  header{
+    background: linear-gradient(to right, #6a6a74 , #3f9b3e);
+    background-size: cover;
+  }
+  .heading{
+    height:150px;
+    color: #d454de;
+    width: 95%;
+    padding: 30px;
+    text-shadow: 3px 3px 3px #989898;
+    font-size: 50px;
+    word-break: break-all;
+    text-align: center;
+    font-size: 4em;
+  }
+  .mar{
+    font-size: 36px;
+    color: #40549a;
+    margin-top:40px;
+  }
+  @media screen and (max-width : 700px){
+    .heading{
+      font-size: 28px;
+    }
+  }
+  .showScores{
+    margin-top:40px;
+  }
+  .scoreData{
+  font-size: 35px;
+  border: 5px ridge #5a4088;
+  margin-bottom: 50px;
+  border-bottom-right-radius: 50px;
+  border-radius: 50px;
+  width:80%;
+  padding: 10px;
+  padding-left: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  font: #0ea04b;
+  }
+  

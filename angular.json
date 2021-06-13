@@ -24,9 +24,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/CSS/adminhome.css",
+              "src/assets/CSS/login.css",
+              "src/assets/CSS/playquiz.css",
+              "src/assets/CSS/userhome.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/JAVASCRIPT/addquestion.js",
+              "src/assets/JAVASCRIPT/jquery.js",
+              "src/assets/JAVASCRIPT/playquiz.js"
+            ]
           },
           "configurations": {
             "production": {

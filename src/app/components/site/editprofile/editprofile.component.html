@@ -1,0 +1,33 @@
+
+	<header>
+		  <div class="heading">
+			  QuickQuiz
+		  </div>
+			<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #2D332A;">
+				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" >
+					<span class="navbar-toggler-icon"></span>
+						</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<div class="navbar-nav" >
+						<a href="/home" class=" nav-link">Home</a>
+						<a href="/editprofile"  class="nav-link active">My Profile</a>
+						<a href="/myscores" class=" nav-link">My Scores</a>
+						<a href="/highscores" class=" nav-link">High Scores</a>
+						<a (click)="logout()" class=" nav-link" >Logout</a>
+					</div>
+				</div>
+			</nav>
+	</header>
+	<div class="heading mar">
+		Change your profile here
+	</div>
+	<form action="/changeinfo" align="center">  
+		<INPUT type="text" placeholder="Enter Username" name="username" value="change if you want"><br><br>
+		<INPUT type="email" placeholder="Enter Email Address" name="email" value="you cant change email" readonly>
+		<br><br>
+		<INPUT type="password" placeholder="Enter Password" name="password" required>
+		<br><br>
+		<INPUT type="password" placeholder="Re-enter Password" name="repassword" required>
+		<br><br>
+		<INPUT type="submit" value="Change" name="change">
+	</form><br>

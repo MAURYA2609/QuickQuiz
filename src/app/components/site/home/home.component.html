@@ -1,0 +1,129 @@
+
+	<header>
+		  <div class="heading" id='heading'>
+			  Welcome to QuickQuiz
+		  </div>
+			<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #2D332A;">
+				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" >
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse" aria-expanded="false" >
+					<div class="navbar-nav">
+						<a href="/home" class=" nav-link active">Home</a>
+						<a href="/myscores" class=" nav-link">My Scores</a>
+						<a (click)="logout()" class=" nav-link float-right" >Logout</a>
+						<a id="show" class="nav-link">About Us</a>
+					</div>
+				</div>
+			</nav>
+	</header>
+	<div id="AboutUs" class="aboutUs" >       
+ 	 	<img [src]="myPhoto" class="img-circle img-thumbnail setProfile" alt="Maurya Patel">
+		<div class="NameText">
+			Maurya Patel
+		</div>
+		<div class="aboutText">Dharmsinh Desai University</div>
+		<div class="aboutText">Full-Stack Web Devloper</div>		
+		<div class="aboutText">Enjoy the Quiz !😃</div>
+	</div>
+	<div class="heading mar">
+		Which quiz you want to play ?
+	</div>
+	<div class="container catBlock">
+  		<div class="row  justify-content-center rowset">
+    		<div class="col-md-3 set  flip-box">
+      			<div class="thumbnail flip-box-inner">
+        			<a href="/playquiz/mythology">
+          				<img [src]="mythology" alt="Mythology" class="flip-box-front catImg">
+						<div class="catText flip-box-back">
+						 Mythology 
+						</div>
+					</a>
+      			</div>
+    		</div>
+			<div class="col-md-3 set flip-box">
+      			<div class="thumbnail flip-box-inner">
+        			<a href="/playquiz/geography">
+          				<img [src]="geography" alt="Geography" class="flip-box-front catImg">
+						<div class="catText flip-box-back">
+						 Geography 
+						</div>
+					</a>
+      			</div>
+    		</div>
+			<div class="col-md-3 set flip-box">
+      			<div class="thumbnail flip-box-inner">
+        			<a href="/playquiz/history">
+          				<img [src]="history" alt="Lights" class="flip-box-front catImg">
+						<div class="catText flip-box-back">
+						 History 
+						</div>
+					</a>
+      			</div>
+    		</div>
+    	</div>
+		<div class="row  justify-content-center rowset">
+    		<div class="col-md-3 set flip-box">
+      			<div class="thumbnail flip-box-inner">
+        			<a href="/playquiz/literature">
+          				<img [src]="literature" alt="Literature" class="flip-box-front catImg">
+						<div class="catText flip-box-back">
+						 Literature 
+						</div>
+					</a>
+      			</div>
+    		</div>
+			<div class="col-md-3 set flip-box">
+      			<div class="thumbnail flip-box-inner">
+        			<a href="/playquiz/movies">
+          				<img [src]="movies" alt="Movies" class="flip-box-front catImg">
+						<div class="catText flip-box-back">
+						 Movies 
+						</div>
+					</a>
+      			</div>
+    		</div>
+			<div class="col-md-3 set flip-box">
+      			<div class="thumbnail flip-box-inner">
+        			<a href="/playquiz/sports">
+          				<img [src]="sports" alt="Sports" class="flip-box-front catImg">
+						<div class="catText flip-box-back">
+						 Sports 
+						</div>
+					</a>
+      			</div>
+    		</div>
+    	</div>
+		<div class="row  justify-content-center ">
+    		<div class="col-md-3 set flip-box">
+      			<div class="thumbnail flip-box-inner">
+        			<a href="/playquiz/space">
+          				<img [src]="spaceexploration" alt="Space Exploration" class="flip-box-front catImg mr-auto">
+						<div class="catText flip-box-back">
+						 Space
+						</div>
+					</a>
+      			</div>
+    		</div>
+			<div class="col-md-3 set flip-box" >
+      			<div class="thumbnail flip-box-inner">
+        			<a href="/playquiz/generalknowledge">
+          				<img [src]="generalknowledge" alt="General Knowledge" class="flip-box-front catImg">
+						<div class="catText flip-box-back">
+							General Knowledge
+						</div>
+					</a>
+      			</div>
+    		</div>
+			<div class="col-md-3 set flip-box">
+      			<div class="thumbnail flip-box-inner">
+        			<a href="/playquiz/technology">
+          				<img [src]="technology" alt="Technology" class="flip-box-front catImg">
+						<div class="catText flip-box-back">
+						 Technology 
+						</div>
+					</a>
+      			</div>
+    		</div>
+    	</div>
+	</div>

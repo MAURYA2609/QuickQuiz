@@ -1,0 +1,33 @@
+
+	<header>
+		  <div class="heading">
+			QuickQuiz
+		  </div>
+		<nav class="navbar navbar-expand-md navbar-dark " style="background-color: #2D332A;">
+				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse" >
+					<div class="navbar-nav" style="float:right;">
+						<a href="/home" class=" nav-link active">Home</a>
+						<a href="/editprofile"  class="nav-link">My Profile</a>
+						<a href="/myscores" class=" nav-link">My Scores</a>
+						<a (click)="logout()" class=" nav-link float-sm-right" >Logout</a>
+					</div>
+				</div>
+			</nav>
+	</header>
+	<form>
+		<div *ngFor="let que of questions;index as i" class="questionbox" ng-controller="quiz">
+			<h3> Q : {{que.question}}</h3>
+			<p><input type="radio" name="Q{{i}}" [(ngModel)]="answers[i]" value={{que.optionA}} > {{que.optionA}}</p>
+			<p><input type="radio" name="Q{{i}}" [(ngModel)]="answers[i]" value={{que.optionB}}> {{que.optionB}}</p>
+			<p><input type="radio" name="Q{{i}}" [(ngModel)]="answers[i]" value={{que.optionC}}> {{que.optionC}}</p>
+			<p><input type="radio" name="Q{{i}}" [(ngModel)]="answers[i]" value={{que.optionD}}> {{que.optionD}}</p>
+		</div>
+		<input type="button" (click)="getScore()" value="GO" class="button">
+	</form>
+	<div class="showAnswer" *ngIf="avail">
+        <h1> You have scored {{score}} </h1>
+    </div>
+	

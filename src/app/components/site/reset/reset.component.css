@@ -1,0 +1,104 @@
+body{
+  background: linear-gradient(to left, #e79dd1 , #e76fd74d , #7b97c2 , #2e264ef3 );
+  background-size: cover;
+}
+
+.loginbox{
+  width: 30%;
+  height: 70%;
+  position: absolute;
+  top: 18%;
+  left: 35%;
+  color: #5a4088;
+}
+.loginbox h1{
+  font-size: 40px;
+  border-bottom: 5px ridge #5a4088;
+  margin-bottom: 50px;
+  padding: 13px 0;
+  text-align: center;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
+  font: #0ea04b;
+}
+.textbox{
+  width: 75%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 0px 0;
+  border-bottom: 1.5px groove #0ea04b;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width:60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.textbox i{
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+.textbox input{
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 0px;	
+}
+.smallbutton{
+	width: 30%;
+	background: none;
+	border: 2px groove #904688;
+	color: black;
+  padding: 3px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 12px 0px;
+  border-radius: 100px;
+  float: left;
+  font-weight: bolder;
+  margin-left: 13%;
+}
+.smallbutton:hover {
+	background-color: #3e8e41;
+}
+.smallbutton:active {
+	border: 2px groove #904688;
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+.button{
+  width: 75%;
+  background: none;
+  border: 2px outset #904688;
+  color: black;
+  font-weight: bolder ;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 10px 0px;
+  border-radius: 20px;
+  margin-left: 12%;
+}
+.button:hover {
+	background-color: #3e8e41;
+}
+.button:active {
+	border: 2px groove #904688;
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+::placeholder{
+	color: #212121b3 ;
+	text-align: left;
+}

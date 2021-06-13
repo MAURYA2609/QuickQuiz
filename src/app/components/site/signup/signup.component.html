@@ -1,0 +1,30 @@
+<html>
+<body>
+<DIV class="loginbox justify-content-center">
+		<H1 >SignUp</H1>
+		<form  [formGroup]="signupForm" autocomplete="off">
+            <div class="textbox">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Username" formControlName="username" class="form-control">
+            </div>
+            <div class="textbox">
+                <i class="fas fa-envelope"></i>	
+                <input type="email" placeholder="Email" formControlName="email" class="form-control">
+            </div>
+            <div class="textbox">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password" formControlName="password" class="form-control">
+            </div>
+            <div class="textbox">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Re-enter Password" formControlName="repassword" class="form-control"><br>
+            </div>
+			<input type="button" value="Signup" class="smallbutton " (click)="register()">
+		</form>
+		<a href="/index"><button value="signup" class="smallbutton">Back</button></a>
+        <div style="color: red;text-align:center;" *ngIf="avail">
+                <p> {{msg}}</p>
+        </div>
+	</DIV>
+</body>
+</html>

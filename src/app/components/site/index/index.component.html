@@ -1,0 +1,24 @@
+<html>
+<body>
+<DIV class="loginbox">
+	<H1 >Login</H1>
+	<form  [formGroup]="loginForm" autocomplete="off">
+		<div class="textbox">
+			<i class="fas fa-user"></i>
+			<input type="text" placeholder="Username" formControlName="username" class="form-control">
+		</div>
+		<br>
+		<div class="textbox">
+			<i class="fas fa-lock"></i>
+			<input type="password" placeholder="Password" formControlName="password" class="form-control"><br>
+		</div>
+		<br>
+		<input type="button" value="login" class="smallbutton " (click)="login()">
+	</form>
+	<a href="/signup">	<button value="signup" class="smallbutton">Sign up</button></a>
+	<div style="color: red;text-align:center;" *ngIf="avail">
+                <p> {{msg}}</p>
+    </div>
+</DIV>
+</body>
+</html>

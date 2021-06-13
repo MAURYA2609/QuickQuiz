@@ -1,0 +1,156 @@
+body{
+    background: linear-gradient(to left, #9277f3, #7b9148f3 );
+    background-size: cover;
+    font-family: cursive;
+  }
+  .navbar{
+    padding: 0px;
+  }
+  .navbar-nav a {
+    font-size: 20px;
+    text-decoration: none;
+    border-radius:10px;
+    cursor:pointer;
+    border:none;
+    float: right;
+    margin:5px 5px;
+  }
+  .navbar-nav{
+    float:right !important;
+  }
+  a:hover{
+    background-color: black;
+  }
+  h2 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  header{
+    background: linear-gradient(to right, #9277f3, #7b9148f3);
+    background-size: cover;
+  }
+  .heading{
+    height:150px;
+    color: #241499;
+    width: 95%;
+    padding: 30px;
+    text-shadow: 3px 3px 3px #989898;
+    font-size: 50px;
+    word-break: break-all;
+    text-align: center;
+    font-size: 4em;
+  }
+  .u>h2{
+    text-align: center;
+  }
+  .question{
+    width: 75%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 0px 0;
+    border: 1.5px groove #19235db3;
+    border-radius: 10px;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .questionbox textarea{
+    height: 100px;
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    font-size: 18px;
+    width: 80%;  
+  }
+  .questionbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    font-size: 18px;
+    width: 80%;
+    margin: 0 0px;
+  }
+  .setDropdown{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .answer{
+    width: 30%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 0px 0;
+    margin: 0px 0;
+    border: 1.5px groove #19235db3;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .questionbox{
+    width: 90%;
+    margin-left:auto;
+    margin-right: auto;
+    color: #5a4088;
+  }
+  textarea::placeholder{
+    color: #212121b3 ;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    text-indent: 120px; 
+  }
+  
+  .addbtn{
+      font-size:50px;
+      width: 100px;
+      height: 100px;
+      border: 3px outset green;
+      background-color: rgb(107, 141, 206);
+      padding: 3px;
+      cursor: pointer;
+      border-radius: 100px;
+      font-weight: bolder;
+      position: relative;
+      margin-left:auto;
+      margin-right: auto;
+      margin-top: 10px;
+      display: block;
+  }
+  .addbtn:hover {
+    background-color: #1a60a7
+  }
+  .addbtn:active {
+    border: 5px outset #904688;
+    background-color: #3399ff;
+    box-shadow: 0 5px #666;
+    outline: none;
+    border-radius: 100px;
+  }
+  .dropdown{
+    width: 25%;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 0px 0;  border-radius: 10px;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+  }
+.setDropdown{
+  width: 70%;
+}
+  @media screen and (max-width : 700px){
+    .heading{
+      font-size: 25px;
+      font-family: sans-serif;
+    }
+    textarea::placeholder{
+      font-size: 15px; 
+    }
+  }
+  

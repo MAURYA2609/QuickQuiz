@@ -1,0 +1,25 @@
+
+	<header>
+		<div class="heading">
+			All scores
+		</div>
+		<nav class="navbar navbar-expand-md navbar-dark " style="background-color: #2D332A;">
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" >
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<div class="navbar-nav" style="float:right;">
+					<a href="/adminhome" class="nav-link">Home</a>
+					<a href="/allscores" class=" nav-link active">Scores</a>
+					<a href="/questionlist" class=" nav-link">Questions</a>
+					<a (click)="logout()" class=" nav-link" >Logout</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="showScores">
+		<div class="scoreData" *ngFor="let data of scores;index as i">
+			{{i+1}} ) {{data.username}} scored {{data.score}} in {{data.category}}
+		</div>
+	</div>	
+	<br>
